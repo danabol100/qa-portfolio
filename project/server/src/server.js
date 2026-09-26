@@ -20,18 +20,6 @@ app.use(
   }),
 );
 
-// async function createAdmin() {
-//   const existing = await loginModel.findOne({ login: "mytestadmin" });
-//   if (existing) {
-//     console.log("Admin already exists:", existing.login);
-//     return;
-//   }
-//   createAdmin();
-//   const passwordHash = await bcrypt.hash("test123", 10);
-//   await loginModel.create({ login: "mytestadmin", passwordHash });
-//   console.log("Admin created:", "mytestadmin / Admin1234");
-// }
-
 app.use(cookieParser());
 app.use(express.json());
 

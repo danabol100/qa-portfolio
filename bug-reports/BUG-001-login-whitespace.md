@@ -18,7 +18,7 @@
 
 - Three whitespace characters pass the Login field validation.
 - No validation message is displayed.
-  -The login request is sent to the server.
+- The login request is sent to the server.
 
 ## Severity
 

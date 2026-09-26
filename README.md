@@ -8,6 +8,10 @@ The application is built with React and includes user authentication, product ma
 
 The goal of this portfolio is to demonstrate manual testing skills, test documentation, bug reporting, and basic analysis of application behavior.
 
+## Live Demo
+
+[Open the application](https://qa-portfolio-five-roan.vercel.app/)
+
 ## Application Scope
 
 The following functionality was tested:
@@ -32,6 +36,7 @@ A total of **24 test cases** were created and executed.
 | Products  |         13 |      7 |      6 |
 | **Total** |     **24** | **17** |  **7** |
 
+The application was deployed and the previously identified defects were re-tested. All 7 reported defects remain reproducible.
 Test cases:
 
 - [Login Test Cases](test-cases/login-test-cases.md)
