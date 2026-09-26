@@ -1,0 +1,140 @@
+# QA Portfolio — Online Store Web Application
+
+## Project Overview
+
+This repository contains QA documentation for an online store web application developed as part of a diploma project.
+
+The application is built with React and includes user authentication, product management, and a product catalog.
+
+The goal of this portfolio is to demonstrate manual testing skills, test documentation, bug reporting, and basic analysis of application behavior.
+
+## Application Scope
+
+The following functionality was tested:
+
+- User Login
+- Product creation
+- Product editing
+- Product deletion
+- Product catalog
+- Product card information
+- Product quantity and price validation
+
+## Testing
+
+### Test Cases
+
+A total of **24 test cases** were created and executed.
+
+| Area      | Test Cases | Passed | Failed |
+| --------- | ---------: | -----: | -----: |
+| Login     |         11 |     10 |      1 |
+| Products  |         13 |      7 |      6 |
+| **Total** |     **24** | **17** |  **7** |
+
+Test cases:
+
+- [Login Test Cases](test-cases/login-test-cases.md)
+- [Product Test Cases](test-cases/product-test-cases.md)
+
+## Bug Reports
+
+A total of **7 defects** were identified during testing.
+
+- [BUG-001 — Login with three whitespace characters](bug-reports/BUG-001-login-whitespace.md)
+- [BUG-002 — Add product with negative Quantity](bug-reports/BUG-002-negative-quantity.md)
+- [BUG-003 — Add product with negative Price](bug-reports/BUG-003-negative-price.md)
+- [BUG-004 — Add product with decimal Quantity](bug-reports/BUG-004-decimal-quantity.md)
+- [BUG-005 — Edit product with negative Quantity](bug-reports/BUG-005-edit-negative-quantity.md)
+- [BUG-006 — Edit product with negative Price](bug-reports/BUG-006-edit-negative-price.md)
+- [BUG-007 — Edit product with decimal Quantity](bug-reports/BUG-007-edit-decimal-quantity.md)
+
+Each bug report contains:
+
+- Steps to Reproduce
+- Expected Result
+- Actual Result
+- Severity
+- Priority
+- Evidence
+
+## Open Questions
+
+Some business rules are not explicitly defined in the application requirements.
+
+- [Open Questions](open-questions/open-questions.md)
+
+Current open questions:
+
+- Should Quantity = 0 be allowed?
+- Should Price = 0 be allowed?
+
+## Evidence
+
+Screenshots and other testing evidence are stored in the `evidence` directory.
+
+Evidence includes:
+
+- UI screenshots
+- Network requests
+- Server responses
+- Results of invalid input testing
+
+## Testing Approach
+
+The following testing techniques were used:
+
+- Functional Testing
+- Positive Testing
+- Negative Testing
+- Boundary Value Analysis
+- Input Validation Testing
+- Authentication Testing
+- Regression Testing
+
+## Project Structure
+
+```text
+qa-portfolio/
+├── test-cases/
+│   ├── login-test-cases.md
+│   └── product-test-cases.md
+│
+├── bug-reports/
+│   ├── BUG-001-login-whitespace.md
+│   ├── BUG-002-negative-quantity.md
+│   ├── BUG-003-negative-price.md
+│   ├── BUG-004-decimal-quantity.md
+│   ├── BUG-005-edit-negative-quantity.md
+│   ├── BUG-006-edit-negative-price.md
+│   └── BUG-007-edit-decimal-quantity.md
+│
+├── open-questions/
+│   └── open-questions.md
+│
+├── evidence/
+│   ├── BUG-001/
+│   ├── BUG-002/
+│   ├── BUG-003/
+│   ├── BUG-004/
+│   ├── BUG-005/
+│   ├── BUG-006/
+│   └── BUG-007/
+│
+└── README.md
+```
+
+## Environment
+
+- Application type: Web application
+- Frontend: React
+- Database: MongoDB
+- Testing type: Manual Testing
+- Browser: Chrome
+- Operating System: macOS
+
+## Notes
+
+This is an educational/diploma project used to demonstrate practical QA documentation and manual testing skills.
+
+The test results and bug reports are based on actual testing of the application.
