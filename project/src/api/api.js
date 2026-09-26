@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8080";
+const BASE_URL = "https://qa-portfolio-api-sn2r.onrender.com";
 
 export const login = async (login, password) => {
   const response = await fetch(`${BASE_URL}/login`, {
