@@ -89,7 +89,7 @@ Selected Postman test results are available below:
 
 The complete Postman collection is available here:
 
-[Online Store API — Postman Collection](Online%20Store%20API.postman_collection.json)
+[Online Store API — Postman Collection](./api-testing/postman/Online-Store-API.postman_collection.json)
 
 ## Tools
 

@@ -195,7 +195,7 @@ qa-portfolio/
 ├── api-testing/
 │   └── postman/
 │       ├── README.md
-│       ├── Online Store API.postman_collection.json
+│       ├── Online-Store-API.postman_collection.json
 │       └── screenshots/
 │           ├── login-valid.png
 │           ├── login-invalid.png
