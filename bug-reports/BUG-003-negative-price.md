@@ -35,8 +35,8 @@ Medium
 
 ### Request Payload
 
-![Request payload with negative Price](../evidence/BUG-002/request-payload.png)
+![Request payload with negative Price](../evidence/BUG-003/request-payload-negative-price.png)
 
 ### Products Table
 
-![Product with negative Price in Products table](../evidence/BUG-002/negative-price-product.png)
+![Product with negative Price in Products table](../evidence/BUG-003/negative-price-product.png)

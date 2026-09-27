@@ -33,8 +33,8 @@ Medium
 
 ## Evidence
 
-![Request payload with decimal Quantity](../evidence/BUG-002/request-payload.png)
+![Request payload with decimal Quantity](../evidence/BUG-007/request-payload.png)
 
 ### Products Table
 
-![Product with decimal Quantity Products table](../evidence/BUG-002/decimal-quantity-product.png)
+![Product with decimal Quantity Products table](../evidence/BUG-007/decimal-quantity-product.png)

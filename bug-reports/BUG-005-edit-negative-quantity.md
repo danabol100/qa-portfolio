@@ -35,8 +35,8 @@ Medium
 
 ### Request Payload
 
-![Request payload with negative Quantity](../evidence/BUG-002/request-payload.png)
+![Request payload with negative Quantity](../evidence/BUG-005/request-payload.png)
 
 ### Products Table
 
-![Product with negative Quantity Products table](../evidence/BUG-002/negative-quantity-product.png)
+![Product with negative Quantity Products table](../evidence/BUG-005/negative-quantity-product.png)

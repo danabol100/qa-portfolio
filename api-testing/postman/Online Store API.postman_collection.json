@@ -1,0 +1,1243 @@
+{
+  "info": {
+    "_postman_id": "93082b1f-b3f2-4532-86a3-4ae839d09e77",
+    "name": "Online Store API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58546314",
+    "_collection_link": "https://go.postman.co/collection/58546314-93082b1f-b3f2-4532-86a3-4ae839d09e77?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Login - Valid Credentials",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"login\": \"abc\",\n  \"password\": \"Admin1234\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://qa-portfolio-api-sn2r.onrender.com/login",
+          "protocol": "https",
+          "host": ["qa-portfolio-api-sn2r", "onrender", "com"],
+          "path": ["login"]
+        }
+      },
+      "response": [
+        {
+          "name": "Login - Valid Credentials",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"login\": \"abc\",\n  \"password\": \"Admin1234\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://qa-portfolio-api-sn2r.onrender.com/login",
+              "protocol": "https",
+              "host": ["qa-portfolio-api-sn2r", "onrender", "com"],
+              "path": ["login"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Date",
+              "value": "Sun, 27 Sep 2026 14:39:37 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "46"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "https://qa-portfolio-five-roan.vercel.app"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "br"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"2d-tdQEKjo1FqK2o+AjP2Hiq4ZMp2w\""
+            },
+            {
+              "key": "rndr-id",
+              "value": "f4be296f-9507-4562"
+            },
+            {
+              "key": "Server",
+              "value": "cloudflare"
+            },
+            {
+              "key": "Set-Cookie",
+              "value": "token=<REDACTED>; Max-Age=86400; Path=/; Expires=Mon, 28 Sep 2026 14:39:37 GMT; HttpOnly; Secure; SameSite=None"
+            },
+            {
+              "key": "vary",
+              "value": "Origin"
+            },
+            {
+              "key": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "x-render-origin-server",
+              "value": "Render"
+            },
+            {
+              "key": "cf-cache-status",
+              "value": "DYNAMIC"
+            },
+            {
+              "key": "CF-RAY",
+              "value": "a41b42429fe4dddf-IAD"
+            },
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"message\": \"Login successful\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Profile - Authenticated User",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://qa-portfolio-api-sn2r.onrender.com/profile",
+          "protocol": "https",
+          "host": ["qa-portfolio-api-sn2r", "onrender", "com"],
+          "path": ["profile"]
+        }
+      },
+      "response": [
+        {
+          "name": "Profile - Authenticated User",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://qa-portfolio-api-sn2r.onrender.com/profile",
+              "protocol": "https",
+              "host": ["qa-portfolio-api-sn2r", "onrender", "com"],
+              "path": ["profile"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Date",
+              "value": "Sun, 27 Sep 2026 14:39:46 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "19"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "https://qa-portfolio-five-roan.vercel.app"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "br"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"f-D2FeIN4F7w4cyl1cHMWVy7DFMYs\""
+            },
+            {
+              "key": "rndr-id",
+              "value": "e2424e11-2937-43ad"
+            },
+            {
+              "key": "Server",
+              "value": "cloudflare"
+            },
+            {
+              "key": "vary",
+              "value": "Origin"
+            },
+            {
+              "key": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "x-render-origin-server",
+              "value": "Render"
+            },
+            {
+              "key": "cf-cache-status",
+              "value": "DYNAMIC"
+            },
+            {
+              "key": "CF-RAY",
+              "value": "a41b427b0f2ea9d0-IAD"
+            },
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"login\": \"abc\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Logout",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "https://qa-portfolio-api-sn2r.onrender.com/logout",
+          "protocol": "https",
+          "host": ["qa-portfolio-api-sn2r", "onrender", "com"],
+          "path": ["logout"]
+        }
+      },
+      "response": [
+        {
+          "name": "Logout",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "https://qa-portfolio-api-sn2r.onrender.com/logout",
+              "protocol": "https",
+              "host": ["qa-portfolio-api-sn2r", "onrender", "com"],
+              "path": ["logout"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Date",
+              "value": "Sun, 27 Sep 2026 14:39:53 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "46"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "https://qa-portfolio-five-roan.vercel.app"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "br"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"2e-8bQArK4vV5vz6XC3Afw/zYzWAnM\""
+            },
+            {
+              "key": "rndr-id",
+              "value": "91404623-4fb2-4db6"
+            },
+            {
+              "key": "Server",
+              "value": "cloudflare"
+            },
+            {
+              "key": "Set-Cookie",
+              "value": "token=<REDACTED>; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT; HttpOnly; Secure; SameSite=None"
+            },
+            {
+              "key": "vary",
+              "value": "Origin"
+            },
+            {
+              "key": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "x-render-origin-server",
+              "value": "Render"
+            },
+            {
+              "key": "cf-cache-status",
+              "value": "DYNAMIC"
+            },
+            {
+              "key": "CF-RAY",
+              "value": "a41b42a51ad02539-IAD"
+            },
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"message\": \"Logout successful\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Login - Invalid Credentials",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"login\": \"A\",\n  \"password\": \"Admin123\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://qa-portfolio-api-sn2r.onrender.com/login",
+          "protocol": "https",
+          "host": ["qa-portfolio-api-sn2r", "onrender", "com"],
+          "path": ["login"]
+        }
+      },
+      "response": [
+        {
+          "name": "Login - Invalid Credentials",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"login\": \"A\",\n  \"password\": \"Admin123\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://qa-portfolio-api-sn2r.onrender.com/login",
+              "protocol": "https",
+              "host": ["qa-portfolio-api-sn2r", "onrender", "com"],
+              "path": ["login"]
+            }
+          },
+          "status": "Unauthorized",
+          "code": 401,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Date",
+              "value": "Sun, 27 Sep 2026 14:42:20 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "50"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "https://qa-portfolio-five-roan.vercel.app"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "br"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"31-VmptvJVCxgMiCaKMQdd9IkNBIdc\""
+            },
+            {
+              "key": "rndr-id",
+              "value": "a746a17d-a8bb-40d2"
+            },
+            {
+              "key": "Server",
+              "value": "cloudflare"
+            },
+            {
+              "key": "vary",
+              "value": "Origin"
+            },
+            {
+              "key": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "x-render-origin-server",
+              "value": "Render"
+            },
+            {
+              "key": "cf-cache-status",
+              "value": "DYNAMIC"
+            },
+            {
+              "key": "CF-RAY",
+              "value": "a41b463fbdb7d7aa-IAD"
+            },
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": false,\n    \"message\": \"Invalid credentials\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Get Products",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://69788f54cd4fe130e3d9605d.mockapi.io/items/",
+          "protocol": "https",
+          "host": ["69788f54cd4fe130e3d9605d", "mockapi", "io"],
+          "path": ["items", ""]
+        }
+      },
+      "response": [
+        {
+          "name": "Get Products",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://69788f54cd4fe130e3d9605d.mockapi.io/items/",
+              "protocol": "https",
+              "host": ["69788f54cd4fe130e3d9605d", "mockapi", "io"],
+              "path": ["items", ""]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "X-Requested-With,Content-Type,Cache-Control,access_token"
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET,PUT,POST,DELETE,OPTIONS"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Length",
+              "value": "343"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 27 Sep 2026 14:46:44 GMT"
+            },
+            {
+              "key": "Etag",
+              "value": "\"2095348328\""
+            },
+            {
+              "key": "Nel",
+              "value": "{\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}"
+            },
+            {
+              "key": "Report-To",
+              "value": "{\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=z%2FbpYrhj770T4X%2BKhgcWxGdP8DHozNNoZNBQpFaKSuc%3D\\u0026sid=1b10b0ff-8a76-4548-befa-353fc6c6c045\\u0026ts=1790520404\"}],\"max_age\":3600}"
+            },
+            {
+              "key": "Reporting-Endpoints",
+              "value": "heroku-nel=\"https://nel.heroku.com/reports?s=z%2FbpYrhj770T4X%2BKhgcWxGdP8DHozNNoZNBQpFaKSuc%3D&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&ts=1790520404\""
+            },
+            {
+              "key": "Server",
+              "value": "Heroku"
+            },
+            {
+              "key": "Via",
+              "value": "1.1 heroku-router"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"createdAt\": \"2026-09-26T19:59:36.365Z\",\n        \"name\": \"Negative Quantity Test\",\n        \"category\": \"Test\",\n        \"quantity\": -1,\n        \"price\": 99,\n        \"url\": \"url 25\",\n        \"description\": \"description 25\",\n        \"id\": \"25\"\n    },\n    {\n        \"createdAt\": \"2026-09-26T23:48:49.717Z\",\n        \"name\": \"Negative Price Test\",\n        \"category\": \"Test\",\n        \"quantity\": 10,\n        \"price\": -20,\n        \"url\": \"url 26\",\n        \"description\": \"description 26\",\n        \"id\": \"26\"\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Create Product - Valid Data",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"category\": \"Test\",\n  \"name\": \"Postman Test Product\",\n  \"quantity\": 10,\n  \"price\": 99\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://69788f54cd4fe130e3d9605d.mockapi.io/items/",
+          "protocol": "https",
+          "host": ["69788f54cd4fe130e3d9605d", "mockapi", "io"],
+          "path": ["items", ""]
+        }
+      },
+      "response": [
+        {
+          "name": "Create Product - Valid Data",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"category\": \"Test\",\n  \"name\": \"Postman Test Product\",\n  \"quantity\": 10,\n  \"price\": 99\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://69788f54cd4fe130e3d9605d.mockapi.io/items/",
+              "protocol": "https",
+              "host": ["69788f54cd4fe130e3d9605d", "mockapi", "io"],
+              "path": ["items", ""]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "X-Requested-With,Content-Type,Cache-Control,access_token"
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET,PUT,POST,DELETE,OPTIONS"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Length",
+              "value": "169"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 27 Sep 2026 14:40:08 GMT"
+            },
+            {
+              "key": "Nel",
+              "value": "{\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}"
+            },
+            {
+              "key": "Report-To",
+              "value": "{\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=%2BPy%2B0osf7R%2BfET9CYZyDCMx4G5syRR5Az984Upi1LnA%3D\\u0026sid=1b10b0ff-8a76-4548-befa-353fc6c6c045\\u0026ts=1790520008\"}],\"max_age\":3600}"
+            },
+            {
+              "key": "Reporting-Endpoints",
+              "value": "heroku-nel=\"https://nel.heroku.com/reports?s=%2BPy%2B0osf7R%2BfET9CYZyDCMx4G5syRR5Az984Upi1LnA%3D&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&ts=1790520008\""
+            },
+            {
+              "key": "Server",
+              "value": "Heroku"
+            },
+            {
+              "key": "Via",
+              "value": "1.1 heroku-router"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"createdAt\": \"2026-09-27T06:17:54.443Z\",\n    \"name\": \"Postman Test Product\",\n    \"category\": \"Test\",\n    \"quantity\": 10,\n    \"price\": 99,\n    \"url\": \"url 25\",\n    \"description\": \"description 25\",\n    \"id\": \"25\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Update Product - Valid Data",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"category\": \"Test Updated\",\n  \"name\": \"Postman Updated Product\",\n  \"quantity\": 15,\n  \"price\": 149\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://69788f54cd4fe130e3d9605d.mockapi.io/items/25",
+          "protocol": "https",
+          "host": ["69788f54cd4fe130e3d9605d", "mockapi", "io"],
+          "path": ["items", "25"]
+        }
+      },
+      "response": [
+        {
+          "name": "Update Product - Valid Data",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"category\": \"Test Updated\",\n  \"name\": \"Postman Updated Product\",\n  \"quantity\": 15,\n  \"price\": 149\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://69788f54cd4fe130e3d9605d.mockapi.io/items/25",
+              "protocol": "https",
+              "host": ["69788f54cd4fe130e3d9605d", "mockapi", "io"],
+              "path": ["items", "25"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "X-Requested-With,Content-Type,Cache-Control,access_token"
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET,PUT,POST,DELETE,OPTIONS"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Length",
+              "value": "181"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 27 Sep 2026 14:40:27 GMT"
+            },
+            {
+              "key": "Nel",
+              "value": "{\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}"
+            },
+            {
+              "key": "Report-To",
+              "value": "{\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=SVBECqeJ3ZVfwifZ%2F7zPcW08opnOvICX6YKUALhloCE%3D\\u0026sid=1b10b0ff-8a76-4548-befa-353fc6c6c045\\u0026ts=1790520027\"}],\"max_age\":3600}"
+            },
+            {
+              "key": "Reporting-Endpoints",
+              "value": "heroku-nel=\"https://nel.heroku.com/reports?s=SVBECqeJ3ZVfwifZ%2F7zPcW08opnOvICX6YKUALhloCE%3D&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&ts=1790520027\""
+            },
+            {
+              "key": "Server",
+              "value": "Heroku"
+            },
+            {
+              "key": "Via",
+              "value": "1.1 heroku-router"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"createdAt\": \"2026-09-27T06:17:54.443Z\",\n    \"name\": \"Postman Updated Product\",\n    \"category\": \"Test Updated\",\n    \"quantity\": 15,\n    \"price\": 149,\n    \"url\": \"url 25\",\n    \"description\": \"description 25\",\n    \"id\": \"25\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Delete Product",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://69788f54cd4fe130e3d9605d.mockapi.io/items/25",
+          "protocol": "https",
+          "host": ["69788f54cd4fe130e3d9605d", "mockapi", "io"],
+          "path": ["items", "25"]
+        }
+      },
+      "response": [
+        {
+          "name": "Delete Product",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://69788f54cd4fe130e3d9605d.mockapi.io/items/25",
+              "protocol": "https",
+              "host": ["69788f54cd4fe130e3d9605d", "mockapi", "io"],
+              "path": ["items", "25"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "X-Requested-With,Content-Type,Cache-Control,access_token"
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET,PUT,POST,DELETE,OPTIONS"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Length",
+              "value": "181"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 27 Sep 2026 14:40:40 GMT"
+            },
+            {
+              "key": "Nel",
+              "value": "{\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}"
+            },
+            {
+              "key": "Report-To",
+              "value": "{\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=2bmrP9nNYB5aQsv4LSevXmb8W4CH82wd8D0JUsWgjSQ%3D\\u0026sid=1b10b0ff-8a76-4548-befa-353fc6c6c045\\u0026ts=1790520040\"}],\"max_age\":3600}"
+            },
+            {
+              "key": "Reporting-Endpoints",
+              "value": "heroku-nel=\"https://nel.heroku.com/reports?s=2bmrP9nNYB5aQsv4LSevXmb8W4CH82wd8D0JUsWgjSQ%3D&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&ts=1790520040\""
+            },
+            {
+              "key": "Server",
+              "value": "Heroku"
+            },
+            {
+              "key": "Via",
+              "value": "1.1 heroku-router"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"createdAt\": \"2026-09-27T06:17:54.443Z\",\n    \"name\": \"Postman Updated Product\",\n    \"category\": \"Test Updated\",\n    \"quantity\": 15,\n    \"price\": 149,\n    \"url\": \"url 25\",\n    \"description\": \"description 25\",\n    \"id\": \"25\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Create Product - Negative Quantity",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"category\": \"Test\",\n  \"name\": \"Negative Quantity Test\",\n  \"quantity\": -1,\n  \"price\": 99\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://69788f54cd4fe130e3d9605d.mockapi.io/items",
+          "protocol": "https",
+          "host": ["69788f54cd4fe130e3d9605d", "mockapi", "io"],
+          "path": ["items"]
+        }
+      },
+      "response": [
+        {
+          "name": "Create Product - Negative Quantity",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"category\": \"Test\",\n  \"name\": \"Negative Quantity Test\",\n  \"quantity\": -1,\n  \"price\": 99\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://69788f54cd4fe130e3d9605d.mockapi.io/items",
+              "protocol": "https",
+              "host": ["69788f54cd4fe130e3d9605d", "mockapi", "io"],
+              "path": ["items"]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "X-Requested-With,Content-Type,Cache-Control,access_token"
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET,PUT,POST,DELETE,OPTIONS"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Length",
+              "value": "171"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 27 Sep 2026 14:41:05 GMT"
+            },
+            {
+              "key": "Nel",
+              "value": "{\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}"
+            },
+            {
+              "key": "Report-To",
+              "value": "{\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=UmniJxDWUZVjXLsGR45iMgChY6DCy7XXV%2B2OyBS5qG4%3D\\u0026sid=1b10b0ff-8a76-4548-befa-353fc6c6c045\\u0026ts=1790520065\"}],\"max_age\":3600}"
+            },
+            {
+              "key": "Reporting-Endpoints",
+              "value": "heroku-nel=\"https://nel.heroku.com/reports?s=UmniJxDWUZVjXLsGR45iMgChY6DCy7XXV%2B2OyBS5qG4%3D&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&ts=1790520065\""
+            },
+            {
+              "key": "Server",
+              "value": "Heroku"
+            },
+            {
+              "key": "Via",
+              "value": "1.1 heroku-router"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"createdAt\": \"2026-09-26T19:59:36.365Z\",\n    \"name\": \"Negative Quantity Test\",\n    \"category\": \"Test\",\n    \"quantity\": -1,\n    \"price\": 99,\n    \"url\": \"url 25\",\n    \"description\": \"description 25\",\n    \"id\": \"25\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Create Product - Negative Price",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"category\": \"Test\",\n  \"name\": \"Negative Price Test\",\n  \"quantity\": 10,\n  \"price\": -20\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://69788f54cd4fe130e3d9605d.mockapi.io/items",
+          "protocol": "https",
+          "host": ["69788f54cd4fe130e3d9605d", "mockapi", "io"],
+          "path": ["items"]
+        }
+      },
+      "response": [
+        {
+          "name": "Create Product - Negative Price",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"category\": \"Test\",\n  \"name\": \"Negative Price Test\",\n  \"quantity\": 10,\n  \"price\": -20\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://69788f54cd4fe130e3d9605d.mockapi.io/items",
+              "protocol": "https",
+              "host": ["69788f54cd4fe130e3d9605d", "mockapi", "io"],
+              "path": ["items"]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "X-Requested-With,Content-Type,Cache-Control,access_token"
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET,PUT,POST,DELETE,OPTIONS"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Length",
+              "value": "169"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 27 Sep 2026 14:41:12 GMT"
+            },
+            {
+              "key": "Nel",
+              "value": "{\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}"
+            },
+            {
+              "key": "Report-To",
+              "value": "{\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=8D3LN7J6Gp72Z%2FlX1Z%2BTm%2Be%2FGPaerAvpcuxNmTg3ioQ%3D\\u0026sid=1b10b0ff-8a76-4548-befa-353fc6c6c045\\u0026ts=1790520072\"}],\"max_age\":3600}"
+            },
+            {
+              "key": "Reporting-Endpoints",
+              "value": "heroku-nel=\"https://nel.heroku.com/reports?s=8D3LN7J6Gp72Z%2FlX1Z%2BTm%2Be%2FGPaerAvpcuxNmTg3ioQ%3D&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&ts=1790520072\""
+            },
+            {
+              "key": "Server",
+              "value": "Heroku"
+            },
+            {
+              "key": "Via",
+              "value": "1.1 heroku-router"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"createdAt\": \"2026-09-26T23:48:49.717Z\",\n    \"name\": \"Negative Price Test\",\n    \"category\": \"Test\",\n    \"quantity\": 10,\n    \"price\": -20,\n    \"url\": \"url 26\",\n    \"description\": \"description 26\",\n    \"id\": \"26\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Create Product - Decimal Quantity",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"category\": \"Test\",\n  \"name\": \"Decimal Quantity Test\",\n  \"quantity\": 1.5,\n  \"price\": 99\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://69788f54cd4fe130e3d9605d.mockapi.io/items/",
+          "protocol": "https",
+          "host": ["69788f54cd4fe130e3d9605d", "mockapi", "io"],
+          "path": ["items", ""]
+        }
+      },
+      "response": [
+        {
+          "name": "Create Product - Decimal Quantity",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"category\": \"Test\",\n  \"name\": \"Decimal Quantity Test\",\n  \"quantity\": 1.5,\n  \"price\": 99\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://69788f54cd4fe130e3d9605d.mockapi.io/items/",
+              "protocol": "https",
+              "host": ["69788f54cd4fe130e3d9605d", "mockapi", "io"],
+              "path": ["items", ""]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "X-Requested-With,Content-Type,Cache-Control,access_token"
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET,PUT,POST,DELETE,OPTIONS"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Length",
+              "value": "171"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 27 Sep 2026 14:37:47 GMT"
+            },
+            {
+              "key": "Nel",
+              "value": "{\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}"
+            },
+            {
+              "key": "Report-To",
+              "value": "{\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=yc4bqWLKNM8AMfML48aV7r82LXf2NeQJFzSv%2Beb5Xh8%3D\\u0026sid=1b10b0ff-8a76-4548-befa-353fc6c6c045\\u0026ts=1790519867\"}],\"max_age\":3600}"
+            },
+            {
+              "key": "Reporting-Endpoints",
+              "value": "heroku-nel=\"https://nel.heroku.com/reports?s=yc4bqWLKNM8AMfML48aV7r82LXf2NeQJFzSv%2Beb5Xh8%3D&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&ts=1790519867\""
+            },
+            {
+              "key": "Server",
+              "value": "Heroku"
+            },
+            {
+              "key": "Via",
+              "value": "1.1 heroku-router"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"createdAt\": \"2026-09-27T09:44:53.215Z\",\n    \"name\": \"Decimal Quantity Test\",\n    \"category\": \"Test\",\n    \"quantity\": 1.5,\n    \"price\": 99,\n    \"url\": \"url 24\",\n    \"description\": \"description 24\",\n    \"id\": \"24\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Update Product - Negative Quantity",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"category\": \"Test\",\n  \"name\": \"Negative Quantity Update\",\n  \"quantity\": -1,\n  \"price\": 99\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://69788f54cd4fe130e3d9605d.mockapi.io/items/20",
+          "protocol": "https",
+          "host": ["69788f54cd4fe130e3d9605d", "mockapi", "io"],
+          "path": ["items", "20"]
+        }
+      },
+      "response": [
+        {
+          "name": "Update Product - Negative Quantity",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"category\": \"Test\",\n  \"name\": \"Negative Quantity Update\",\n  \"quantity\": -1,\n  \"price\": 99\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://69788f54cd4fe130e3d9605d.mockapi.io/items/20",
+              "protocol": "https",
+              "host": ["69788f54cd4fe130e3d9605d", "mockapi", "io"],
+              "path": ["items", "20"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "X-Requested-With,Content-Type,Cache-Control,access_token"
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET,PUT,POST,DELETE,OPTIONS"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Length",
+              "value": "173"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 27 Sep 2026 14:39:18 GMT"
+            },
+            {
+              "key": "Nel",
+              "value": "{\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}"
+            },
+            {
+              "key": "Report-To",
+              "value": "{\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=JA%2FPcVAwAZDpY1KE60q%2F3xQ%2BvelFjgMBk4tYedWgzJE%3D\\u0026sid=1b10b0ff-8a76-4548-befa-353fc6c6c045\\u0026ts=1790519958\"}],\"max_age\":3600}"
+            },
+            {
+              "key": "Reporting-Endpoints",
+              "value": "heroku-nel=\"https://nel.heroku.com/reports?s=JA%2FPcVAwAZDpY1KE60q%2F3xQ%2BvelFjgMBk4tYedWgzJE%3D&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&ts=1790519958\""
+            },
+            {
+              "key": "Server",
+              "value": "Heroku"
+            },
+            {
+              "key": "Via",
+              "value": "1.1 heroku-router"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"createdAt\": \"2026-09-26T20:03:08.423Z\",\n    \"name\": \"Negative Quantity Update\",\n    \"category\": \"Test\",\n    \"quantity\": -1,\n    \"price\": 99,\n    \"url\": \"url 20\",\n    \"description\": \"description 20\",\n    \"id\": \"20\"\n}"
+        }
+      ]
+    }
+  ]
+}

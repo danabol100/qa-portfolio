@@ -35,8 +35,8 @@ Medium
 
 ### Request Payload
 
-![Request payload with decimal Quantity](../evidence/BUG-002/request-payload.png)
+![Request payload with decimal Quantity](../evidence/BUG-004/request-payload.png)
 
 ### Products Table
 
-![Product with decimal Quantity in Products table](../evidence/BUG-002/decimal-quantity-product.png)
+![Product with decimal Quantity in Products table](../evidence/BUG-004/decimal-quantity-product.png)

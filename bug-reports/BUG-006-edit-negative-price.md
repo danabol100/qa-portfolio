@@ -33,8 +33,8 @@ Medium
 
 ## Evidence
 
-![Request payload with negative Price](../evidence/BUG-002/request-payload.png)
+![Request payload with negative Price](../evidence/BUG-006/request-payload.png)
 
 ### Products Table
 
-![Product with negative Price Products table](../evidence/BUG-002/negative-quantity-product.png)
+![Product with negative Price Products table](../evidence/BUG-006/negative-quantity-product.png)
