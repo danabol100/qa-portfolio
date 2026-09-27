@@ -127,7 +127,7 @@ The API accepts product values that should be rejected by validation:
 
 ### Postman Collection
 
-- [Online Store API — Postman Collection](api-testing/postman/Online%20Store%20API.postman_collection.json)
+- [Online Store API — Postman Collection](api-testing/postman/Online-Store-API.postman_collection.json)
 - [API Testing Documentation](api-testing/postman/README.md)
 
 ### API Testing Evidence
