@@ -64,6 +64,26 @@ Each bug report contains:
 - Priority
 - Evidence
 
+## Jira — Defect Tracking
+
+Jira was used to track defects found during testing of the Online Store application.
+
+Three defects were documented in Jira:
+
+| Bug     | Area        | Severity | Retest |
+| ------- | ----------- | -------- | ------ |
+| BUG-001 | Login       | Medium   | Failed |
+| BUG-002 | Add Product | Medium   | Failed |
+| BUG-003 | Add Product | Medium   | Failed |
+
+The defects were moved through the Jira workflow and retested after the reported fixes. All three defects remained reproducible during retest.
+
+### Jira Evidence
+
+[BUG-001](./evidence/jira/BUG-001/)
+[BUG-002](./evidence/jira/BUG-002/)
+[BUG-003](./evidence/jira/BUG-003/)
+
 ## Open Questions
 
 Some business rules are not explicitly defined in the application requirements.
